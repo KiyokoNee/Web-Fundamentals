@@ -1,0 +1,20 @@
+html {
+    font-family: cursive;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(133,105,158,1) 0%, rgba(245,199,178,1) 100%);
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+table, th, td {
+    border: 1px double;
+}
+
+label {
+    display: inline-block;
+    width: 5vw;
+    text-align: left;
+}
