@@ -1,0 +1,35 @@
+* {
+    font-family: cursive;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    padding: 10px;
+    margin: 1rem auto;
+}
+
+h2 {
+    background-color: blueviolet;
+    color: white;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+    margin: 1rem auto;
+}
+
+h3 {
+    background-color: skyblue;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 1rem auto;
+}
+
+span {
+    color:aqua;
+}
