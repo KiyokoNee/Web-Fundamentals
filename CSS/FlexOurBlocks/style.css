@@ -28,6 +28,6 @@
     background-color: purple;
 }
 .row {
-    /* TODO - what should go here? */
+    display: flex;
 }
 
