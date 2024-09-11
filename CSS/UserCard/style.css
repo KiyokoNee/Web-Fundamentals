@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-circle {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index:3;
+}
+
+#map-marker {
+    height:15px;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 40vh;
+    margin-top: 15%;
+    background-color: aliceblue;
+    border: 2px solid slateblue;
+    z-index: 1;
+}
+
+.top-edge {
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    z-index: 2;
+}
+
+.information{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+}
+
+img {
+    max-width: 100px;
+}
