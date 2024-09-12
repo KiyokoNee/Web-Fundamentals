@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Main Page</title>
-    <link rel="stylesheet" href="style.css" >
+    <title>Profile Page Core</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="title">Profile</div>
-        <div class="topnav">
-            <a href="rickroll.jpg">Home</a>
-            <a href="rickroll.jpg">My Profile</a>
-            <a href="rickroll.jpg">Find Connections</a>
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn">Sign Out</button></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="card">
+            <div class="top-edge"></div>
+            <img id="user-circle" src="images/jane-m.jpg" alt="User Circle">
+            <div class="information">
+                <h1 id="user-name">Jane Mallon</h1>
+                <h2><img id="map-marker" src="icons/map-marker.png" alt="Map Marker"> Seattle</h2><br>
+                <p>Developer | Engineer | Problem Solver</p>
+                <p>Master of shadows and the Internet!</p><br>
+                <div class="edit-profile"><img id="gear" src="icons/gear.png"> <a href="https://youtu.be/dQw4w9WgXcQ">edit profile</a></div>
+            </div>
         </div>
-    </header>
+    </div>
+    <div class="sidebar">
+
+    </div>
 </body>
+
 </html>

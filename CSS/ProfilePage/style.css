@@ -1,29 +1,110 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-body {
     margin: 0;
-    font-family: cursive;
+    padding: 0;
 }
 
-header {
+.nav {
+    height: 75px;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    font-family: Roboto;
     display: flex;
-    justify-content: flex-end;
-    justify-content: center;
-    background-color: black;
-    color:white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: left;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.81);
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    position: relative;
+    z-index: 10;
+    padding: 10px 30px;
+    font-family: Roboto;
+    font-size: large;
+    color: white;
+    background-color: rgb(60, 133, 236);
+    border: 3px solid black;
+    box-shadow: 3px 3px 2px 1px black;
+}
+
+.btn:hover {
+    font-weight: bold;
+    box-shadow:none;
+}
+
+img {
+    max-width: 100px;
+}
+
+#user-circle {
+    position: absolute;
+    border-radius: 50%;
+    top: 15%;
+    left: 5%;
+    z-index:3;
+}
+
+#map-marker {
+    height:15px;
+}
+
+#gear {
+    height: 15px;
+}
+
+.main {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    width: 30%;
+    height: 35vh;
+    margin-top: 10%;
+    background-color: aliceblue;
+    border: 2px solid slateblue;
+    z-index: 1;
+}
+
+.top-edge {
     width: 100%;
     height: 100px;
+    background-color: aqua;
+    z-index: 2;
 }
 
-.title {
-    font-size:40px;
-}
-
-.topnav {
-    font-size: 16px;
+.information{
+    position: absolute;
+    top: 50%;
+    left: 6%;
 }
