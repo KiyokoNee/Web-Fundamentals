@@ -5,7 +5,7 @@
 }
 
 .nav {
-    height: 75px;
+    height: 100px;
     background-color: rgb(86, 86, 86);
     color: white;
     display: flex;
@@ -57,6 +57,7 @@ a:hover {
     box-shadow:none;
 }
 
+
 img {
     max-width: 100px;
 }
@@ -65,8 +66,8 @@ img {
     position: absolute;
     border-radius: 50%;
     top: 15%;
-    left: 5%;
-    z-index:3;
+    left: 3%;
+    z-index:2;
 }
 
 #map-marker {
@@ -78,19 +79,20 @@ img {
 }
 
 .main {
-    flex: 2;
-    flex-direction: column;
+    float: left;
+    width: 60%;
 }
 
 .card {
     position: relative;
     display: flex;
-    width: 30%;
-    height: 35vh;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
     background-color: aliceblue;
     border: 5px solid lightgray;
     z-index: 1;
-    margin: 20px;
+    margin-bottom: 20px;
     margin-left: 10%;
 }
 
@@ -102,7 +104,7 @@ img {
 .top-edge, .alt-top-edge {
     width: 100%;
     height: 100px;
-    z-index: 2;
+    z-index: 1;
 
 }
 
@@ -122,14 +124,7 @@ img {
 }
 
 .information{
-    position: absolute;
-    top: 50%;
-    left: 6%;
-}
-
-.education {
-    display: flex;
-    flex-direction: column;
+    margin: 50px 20px 10px 20px;
 }
 
 .education-information {
@@ -142,5 +137,20 @@ img {
 }
 
 .sidebar {
-    flex: 1;
+    float: right;
+    width: 40%;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
+.running-total {
+    background-color: lightgray;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    width: 25px;
+    height: 25px;
 }
