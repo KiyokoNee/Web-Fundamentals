@@ -59,7 +59,7 @@ a:hover {
 
 
 img {
-    max-width: 100px;
+    max-width: 125px;
 }
 
 #user-circle {
@@ -124,7 +124,7 @@ img {
 }
 
 .information{
-    margin: 50px 20px 10px 20px;
+    margin: 100px 20px 10px 20px;
 }
 
 .education-information {
@@ -145,12 +145,33 @@ img {
     display: flex;
     flex-direction: row;
 }
-.running-total {
+
+.total, .running-total {
     background-color: lightgray;
     color: black;
     border-radius: 50%;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     width: 25px;
     height: 25px;
+
+}
+.running-total {
+    padding: 20px;
+    width: 60px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.contact img {
+    border-radius: 50%;
+}
+
+.approval {
+    width: 75px;
 }
