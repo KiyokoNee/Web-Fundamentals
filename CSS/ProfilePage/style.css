@@ -1,17 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 .nav {
     height: 75px;
     background-color: rgb(86, 86, 86);
     color: white;
-    font-family: Roboto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    margin-bottom: 5%;
 }
 
 .nav-links {
@@ -78,33 +79,68 @@ img {
 
 .main {
     flex: 2;
-}
-
-.sidebar {
-    flex: 1;
+    flex-direction: column;
 }
 
 .card {
     position: relative;
-    display: inline-block;
-    margin-left: 10%;
+    display: flex;
     width: 30%;
     height: 35vh;
-    margin-top: 10%;
     background-color: aliceblue;
-    border: 2px solid slateblue;
+    border: 5px solid lightgray;
     z-index: 1;
+    margin: 20px;
+    margin-left: 10%;
+}
+
+.card-title {
+    text-align: left;
+    justify-items: center;
+}
+
+.top-edge, .alt-top-edge {
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+
 }
 
 .top-edge {
-    width: 100%;
-    height: 100px;
-    background-color: aqua;
-    z-index: 2;
+    background-color: rgb(60, 133, 236);
+}
+
+.alt-top-edge {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(86, 86, 86);
+}
+
+.alt-top-edge h2 {
+    margin: 50px;
 }
 
 .information{
     position: absolute;
     top: 50%;
     left: 6%;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-information {
+    margin: 10px 20px;
+}
+
+.timeframe {
+    color: grey;
+    font-style: italic;
+}
+
+.sidebar {
+    flex: 1;
 }
