@@ -9,6 +9,10 @@ img {
     border-radius: 50%;
 }
 
+.social-img {
+    width: 25px;
+}
+
 table, th, td {
     border: 1px double;
 }
