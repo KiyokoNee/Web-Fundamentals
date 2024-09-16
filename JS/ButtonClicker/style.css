@@ -58,13 +58,13 @@ h1 {
 /* the main content (left column) of the page */
 #main {
     float: left;
-    width: 60%;
+    width: 70%;
 }
 
 /* the sidebar (right column) of the page */
 #sidebar {
     float: right;
-    width: 40%;
+    width: 30%;
 }
 
 /* the content cards for the page */
