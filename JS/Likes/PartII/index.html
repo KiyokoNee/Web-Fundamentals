@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Likes Part II</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="main">
-        <div class="card">
-            <div class="top-row">
-                <h2 class="userName">Ainchase Ishmael</h2>
-                <p class="numLikes">34 like(s)</p>
-                <button class="btn" onclick="increaseLikes()">Like</button>
+    <div class="nav">
+        <h1 class="nav-title">Network</h1>
+    </div>
+    <div id="content">
+        <div id="sidebar">
+            <div class="card">
+                <img src="images/user-circle.png" alt="user-circle">
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Add an Avatar</a>
+                <h2>James Doe</h2>
             </div>
-            <div class="bottom-row">
-                <p>A messenger for the goddess Ismael, sent to prevent the destruction of the El. No, I will not be taking career advice at this time.</p>
+        </div>
+        <div id="main">
+            <div class="card">
+                <div class="top-row">
+                    <h2 class="userName">Neil M</h2>
+                    <p class="numLikes">9 like(s)</p>
+                    <button class="btn" onclick="increaseLikes(this, 0)">Like</button>
+                </div>
+                <div class="bottom-row">
+                    <p>I just set up this new discord bot, let me know what you all think. <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">link</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top-row">
+                    <h2 class="userName">Nicole K</h2>
+                    <p class="numLikes">12 like(s)</p>
+                    <button class="btn" onclick="increaseLikes(this, 1)">Like</button>
+                </div>
+                <div class="bottom-row">
+                    <p>Just finished my <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">next comic</a>, check it out.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top-row">
+                    <h2 class="userName">Jim R</h2>
+                    <p class="numLikes">9 like(s)</p>
+                    <button class="btn" onclick="increaseLikes(this, 2)">Like</button>
+                </div>
+                <div class="bottom-row">
+                    <p>I can't stop listening to the <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">new album</a>. Who else is liking it?</p>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

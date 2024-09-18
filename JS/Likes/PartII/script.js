@@ -1,8 +1,8 @@
-let likes = 34;
+let likes = [9, 12, 9];
 
-function increaseLikes() {
-    const likesText = document.querySelector(".numLikes");
+function increaseLikes(element,index) {
+    const likesText = element.previousElementSibling;
 
-    likes++;
-    likesText.innerText = likes + " like(s)";
+    likes[index]++;
+    likesText.innerText = likes[index] + " like(s)";
 }
