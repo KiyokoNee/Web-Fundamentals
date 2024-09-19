@@ -186,3 +186,7 @@ img {
     border-top: 5px solid lightgray;
     padding: 20px;
 }
+
+.view-all .contact {
+    width: 65%;
+}
