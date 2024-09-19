@@ -152,7 +152,7 @@ img {
     flex-direction: row;
 }
 
-.total, .running-total {
+#total, #running-total {
     background-color: lightgray;
     color: black;
     border-radius: 50%;
@@ -162,7 +162,7 @@ img {
     height: 25px;
 
 }
-.running-total {
+#running-total {
     padding: 20px;
     width: 60px;
 }
@@ -185,4 +185,12 @@ img {
 .view-more {
     border-top: 5px solid lightgray;
     padding: 20px;
+}
+
+.edit-profile a {
+    text-decoration: underline;
+}
+
+.view-all .contact {
+    width: 65%;
 }
