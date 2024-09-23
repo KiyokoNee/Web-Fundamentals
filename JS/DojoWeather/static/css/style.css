@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* center content to the page */
+.center {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* navigation bar */
+#nav-bar {
+    background-color: skyblue;
+    color:aliceblue;
+    font-size: x-large;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15vw;
+    box-sizing: border-box;
+}
+
+#nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav a:hover {
+    font-weight: bold;
+}
+
+#nav a:active {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* main header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: thin solid;
+    font-weight: bold;
+}
+
+#main-header h2 {
+    font-size: xx-large;
+}
+
+#main-header label {
+    font-size: large;
+}
+
+#degrees {
+    padding: 8px 3px;
+}
+
+/* display week content */
+#main-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+/* day cards in main content */
+.day-card {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.day-card h3 {
+    margin-top: 0;
+}
+
+.day-card > p {
+    font-size: large;
+}
+
+.weather-img {
+    border-radius: 50%;
+}
+
+.temperature{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.temperature p {
+    margin-bottom: 0;
+}
+
+.high-temp {
+    color: red;
+}
+
+.low-temp {
+    color: blue;
+}
+
+/* cookie warning window */
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid;
+    padding: 20px;
+    position: fixed;
+    bottom: 0%;
+    left: 15%;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#footer h3, #footer p {
+    text-wrap: wrap;
+    padding: 0 20px;
+}
+
+#footer button {
+    padding: 10px 30px;
+    font-size: medium;
+    text-wrap: nowrap;
+    color: white;
+    background-color: rgb(60, 133, 236);
+    border: 3px solid black;
+    box-shadow: 3px 3px 2px 1px black;
+}
+
+#footer button:hover {
+    color: black;
+    background-color: rgb(105, 157, 230);
+}
+
+#footer button:active {
+    color: black;
+    background-color: rgb(105, 230, 230);
+}
