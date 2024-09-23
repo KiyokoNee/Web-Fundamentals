@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="nav" class="center">
+        <h1>Dojonary</h1>
+        <input id="search" type="text" placeholder="Search">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="main-content" class="center">
+        <div id="left-col">
+            <div class="definition">
+                <div class="summary">
+                    <h2>ninja</h2>
+                    <h3>noun</h3>
+                    <h4>Plural: ninjas</h4>
+                    <button class="like-btn" onclick="likeAlert()">13 Likes</button>
+                </div>
+                <p class="description">
+                    A practitioner skilled in the
+                    <a href="https://en.wikipedia.org/wiki/Japanese_Wikipedia" target="_blank">Japanese</a> art of
+                    <a href="https://en.wikipedia.org/wiki/Ninjutsu" target="_blank">ninjutsu</a>
+                </p>
+            </div>
+            <div class="definition">
+                <div class="summary">
+                    <h2>ninja</h2>
+                    <h3>noun</h3>
+                    <h4>Plural: ninjas</h4>
+                    <button class="like-btn" onclick="likeAlert()">37 Likes</button>
+                </div>
+                <p class="description">
+                    A <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a> 
+                    who breaks down problems with 
+                    <a href="https://en.wikipedia.org/wiki/Zen" target="_blank">zen</a>-like focus
+                </p>
+            </div>
+        </div>
+        <div id="right-col">
+            <p>Dojonary is defined by <span class="bold">YOU</span></p><br>
+            <button id="addDef" class="btn" onclick="removeButton(this)">Add Definition</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

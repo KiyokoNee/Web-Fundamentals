@@ -1,0 +1,84 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+/* center content to the page */
+.center {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* set the line height to the height of the h1 container to center the text */
+h1 {
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+}
+
+/* the style content for the navigation bar */
+#nav {
+    background-color: rgb(155, 154, 154);
+    color: black;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#search {
+    align-self: center;
+    height: 40px;
+    width: 25%;
+    padding: 0 100px 0 0;
+    border: 3px solid black;
+    font-size: large;
+}
+
+#nav button {
+    padding: 0 35px;
+    margin: 20px 0;
+    font-family: Roboto;
+    font-size: large;
+    color: white;
+    background-color: rgb(60, 133, 236);
+    border: 3px solid black;
+    box-shadow: 3px 3px 2px 1px black;
+}
+
+#nav button:hover {
+    font-weight: bold;
+    box-shadow:none;
+}
+
+#nav button:active {
+    font-weight: normal;
+    background-color: rgb(21, 169, 228);
+}
+
+/* styling for the main content */
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling for the left column of the main content */
+
+.definition {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.summary {
+    text-align: center;
+}
+
+/* styling for the right column of the main content */
+
+#right-col {
+    border: 2px solid black;
+}
