@@ -1,13 +1,16 @@
+/* displays alert when clicking on a city */
 function clickCity() {
     alert("Loading weather report...")
 }
 
+/* removes the fixed footer when hitting the accept button */
 function acceptCookies() {
     const cookieMsg = document.getElementById('footer');
 
     cookieMsg.remove();
 }
 
+/* determines which temp system is being toggled to, then calls the correct conversion formula for the temperatures */
 function toggleTemps(){
     const tempSystem = document.getElementById('degrees').value;
 
@@ -23,6 +26,8 @@ function toggleTemps(){
     }
 }
 
+
+/* temperature change formulas given a nodelist of elements tied to the temperature classes */
 function changeFarenheit(elements) {
     for(let i = 0; i < elements.length; i++) {
         let tempVal = Number(elements[i].innerText.slice(0,-1));
