@@ -36,11 +36,11 @@ button {
 
 /* style for the nav button specifically */
 #nav button {
-    padding: 10px 35px;
-    margin: 20px 0;
     font-size: large;
     color: white;
     background-color: rgb(60, 133, 236);
+    padding: 10px 35px;
+    margin: 20px 0;
 }
 
 #nav button:hover {
@@ -58,7 +58,7 @@ button {
 #main-content {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 #main-content button {
@@ -68,7 +68,18 @@ button {
     width: auto;
     height: auto;
     color: black;
-    padding: 5px 8px;
+    background-color: gold;
+    padding: 5px 20px;
+    text-wrap: nowrap;
+}
+
+#main-content button:hover {
+    font-style: italic;
+}
+
+#main-content button:active {
+    background-color: yellow;
+    font-weight: normal;
 }
 
 #left-col {
@@ -88,26 +99,27 @@ button {
 }
 
 .definition h2 {
-    font-size: xx-large;
-    margin: 10px 0;
+    font-size: 44px;
+    margin: 0;
+}
+
+.category {
+    font-size: 20px;
+    margin: 0;
 }
 
 .italic {
     font-style: italic;
-    font-size: large;
-}
-
-.definition button {
-    background-color: gold;
 }
 
 .summary {
-    width: 20%;
+    padding: 0 20px;
 }
 
 .description {
     flex-wrap: wrap;
     width: 75%;
+    font-size: 20px;
 }
 
 /* styling for the right column of the main content */
@@ -121,7 +133,8 @@ button {
 }
 
 #right-col p {
-    font-size: large;
+    font-size: 24px;
+    text-align: left;
 }
 
 .bold {
@@ -129,6 +142,7 @@ button {
 }
 
 #right-col button {
+    padding: 10px 30%;
     background-color: rgb(100, 190, 100);
 }
 
