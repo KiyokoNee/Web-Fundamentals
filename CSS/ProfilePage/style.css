@@ -76,6 +76,12 @@ img {
     z-index: 1;
 }
 
+#location {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
 #map-marker {
     height:15px;
 }
@@ -84,8 +90,12 @@ img {
     height: 15px;
 }
 
-.main {
+#main {
     width: 60%;
+}
+
+#main h2 {
+    padding-bottom: 10px;
 }
 
 .card {
@@ -141,7 +151,7 @@ img {
     font-style: italic;
 }
 
-.sidebar {
+#sidebar {
     width: 40%;
 }
 
@@ -161,7 +171,6 @@ img {
 
 }
 .running-total {
-    padding: 20px;
     width: 60px;
 }
 
