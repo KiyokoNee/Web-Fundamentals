@@ -1,161 +1,137 @@
-* {
+html, body {
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 80%;
-    margin: auto;
-    min-height: 100vh;
-}
-
-/* set the line height to the height of the h1 container to center the text */
-h1 {
-    height: 50px;
-    width: 200px;
-    line-height: 50px;
-}
-
-/* the style content for the navigation bar */
-.nav {
-    background-color: rgb(155, 154, 154);
-    color: black;
     font-family: Roboto;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
-#search {
-    align-self: center;
-    height: 40px;
-    width: 25%;
-    padding: 0 100px 0 0;
-    border: 3px solid black;
+/* center content to the page */
+.center {
+    margin: 0 auto;
+    width: 70%;
 }
 
-.btn {
-    height: 50px;
-    width: 200px;
-    padding: 10px 30px;
-    font-family: Roboto;
-    font-size: large;
-    color: white;
-    background-color: rgb(60, 133, 236);
+/* set the common styling for the buttons on whole page */
+button {
     border: 3px solid black;
     box-shadow: 3px 3px 2px 1px black;
 }
 
-.btn:hover {
+/* the style content for the navigation bar */
+#nav {
+    background-color: rgb(155, 154, 154);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    height: 40px;
+    padding: 0 100px 0 0;
+    border: 3px solid black;
+    font-size: large;
+}
+
+/* style for the nav button specifically */
+#nav button {
+    padding: 10px 35px;
+    margin: 20px 0;
+    font-size: large;
+    color: white;
+    background-color: rgb(60, 133, 236);
+}
+
+#nav button:hover {
     font-weight: bold;
     box-shadow:none;
 }
 
-.btn:active {
+#nav button:active {
     font-weight: normal;
     background-color: rgb(21, 169, 228);
 }
 
-/* the main content (left column) of the page */
-#main {
-    float: left;
-    width: 70%;
+/* styling for the main content */
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-/* the content cards for the main part of the page */
-.card {
-    position: relative;
-    display: flex;
-    width: 90%;
+#main-content button {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: cursive;
+    width: auto;
     height: auto;
+    color: black;
+    padding: 5px 8px;
+}
+
+#left-col {
+    width: 60%;
+}
+
+/* styling for the left column of the main content */
+.definition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
     border: 2px solid black;
     padding: 20px;
     margin-bottom: 20px;
     font-family: cursive;
 }
 
-.card .btn {
-    font-family: cursive;
+.definition h2 {
+    font-size: xx-large;
+    margin: 10px 0;
 }
 
-/* the left column of the cards */
-.left-col {
-    float: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.italic {
+    font-style: italic;
+    font-size: large;
+}
+
+.definition button {
+    background-color: gold;
+}
+
+.summary {
     width: 20%;
 }
 
-.left-col h2 {
-    font-size: 48px;
+.description {
+    flex-wrap: wrap;
+    width: 75%;
 }
 
-.left-col h3 {
-    font-size: 28px;
-    font-style: italic;
-}
-
-.left-col h4 {
-    font-size: 18px;
-}
-
-.left-col .btn {
-    font-size: 14px;
-    font-weight: bold;
-    width: auto;
-    height: auto;
-    background-color: gold;
-    color: black;
-}
-
-.left-col .btn:hover {
-    font-style: italic;
-}
-
-.left-col .btn:active {
-    background-color: yellow;
-    font-weight: normal;
-}
-/* the right column of the cards */
-.right-col {
-    float: right;
-    width: 60%;
-    margin:  auto;
-}
-
-/* the sidebar (right column) of the page */
-#sidebar {
-    float: right;
+/* styling for the right column of the main content */
+#right-col {
+    height: fit-content;
     width: 30%;
-
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: cursive;
 }
 
-#sidebar .card {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
-}
-
-#sidebar p {
-    font-size: 28px;
-}
-#sidebar .btn {
-    background-color: rgb(100, 190, 100);
-    color: black;
-}
-
-#sidebar .btn:active {
-    background-color: chartreuse;
+#right-col p {
+    font-size: large;
 }
 
 .bold {
     font-weight: bold;
 }
 
+#right-col button {
+    background-color: rgb(100, 190, 100);
+}
+
+#right-col button:active {
+    background-color: chartreuse;
+}
