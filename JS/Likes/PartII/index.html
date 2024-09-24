@@ -8,48 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="nav">
-        <h1 class="nav-title">Network</h1>
-    </div>
+<body class="center">
+    <h1 id="nav">Network</h1>
+    <h2>Your Feed</h2>
     <div id="content">
-        <div id="sidebar">
-            <div class="card">
-                <img src="images/user-circle.png" alt="user-circle">
-                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Add an Avatar</a>
-                <h2>James Doe</h2>
-            </div>
+        <div id="sidebar" class="card">
+            <img src="images/user-circle.png" alt="user-circle">
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Add an Avatar</a>
+            <h3>James Doe</h3>
         </div>
         <div id="main">
             <div class="card">
                 <div class="top-row">
-                    <h2 class="userName">Neil M</h2>
-                    <p class="numLikes">9 like(s)</p>
-                    <button class="btn" onclick="increaseLikes(this, 0)">Like</button>
+                    <h3 class="userName">Neil M</h3>
+                    <div class="like-group">
+                        <p class="numLikes">9 like(s)</p>
+                        <button class="btn" onclick="increaseLikes(this, 0)">Like</button>
+                    </div>
                 </div>
-                <div class="bottom-row">
-                    <p>I just set up this new discord bot, let me know what you all think. <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">link</a></p>
-                </div>
+                <p class="bottom-row">I just set up this new discord bot, let me know what you all think. <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">link</a></p>
             </div>
             <div class="card">
                 <div class="top-row">
-                    <h2 class="userName">Nicole K</h2>
-                    <p class="numLikes">12 like(s)</p>
-                    <button class="btn" onclick="increaseLikes(this, 1)">Like</button>
+                    <h3 class="userName">Nicole K</h3>
+                    <div class="like-group">
+                        <p class="numLikes">12 like(s)</p>
+                        <button class="btn" onclick="increaseLikes(this, 1)">Like</button>
+                    </div>
                 </div>
-                <div class="bottom-row">
-                    <p>Just finished my <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">next comic</a>, check it out.</p>
-                </div>
+                <p class="bottom-row">Just finished my <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">next comic</a>, check it out.</p>
             </div>
             <div class="card">
                 <div class="top-row">
-                    <h2 class="userName">Jim R</h2>
-                    <p class="numLikes">9 like(s)</p>
-                    <button class="btn" onclick="increaseLikes(this, 2)">Like</button>
+                    <h3 class="userName">Jim R</h3>
+                    <div class="like-group">
+                        <p class="numLikes">9 like(s)</p>
+                        <button class="btn" onclick="increaseLikes(this, 2)">Like</button>
+                    </div>
                 </div>
-                <div class="bottom-row">
-                    <p>I can't stop listening to the <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">new album</a>. Who else is liking it?</p>
-                </div>
+                <p class="bottom-row">I can't stop listening to the <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">new album</a>. Who else is liking it?</p>
             </div>
         </div>
     </div>
