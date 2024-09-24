@@ -4,7 +4,7 @@
     font-family: Roboto;
 }
 
-.nav {
+#nav {
     height: 100px;
     background-color: rgb(86, 86, 86);
     color: white;
@@ -15,20 +15,31 @@
     margin-bottom: 5%;
 }
 
-.nav-links {
+#nav-links {
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
 }
 
-li {
-    margin: 0 10px;
+#nav-links a {
+    color: white;
+    padding: 0 20px;
+}
+
+#nav-links a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#content {
+    display: flex;
 }
 
 a {
     color:blue;
     text-decoration: none;
+    padding: 0 
 }
 
 a:hover {
@@ -36,14 +47,6 @@ a:hover {
     font-weight: bold;
 }
 
-.nav-links a {
-    color: rgba(255, 255, 255, 0.81);
-}
-
-.nav-links a:hover {
-    color: white;
-    font-weight: bold;
-}
 
 .btn {
     position: relative;
@@ -68,11 +71,9 @@ img {
 }
 
 #user-circle {
-    position: absolute;
     border-radius: 50%;
-    top: 15%;
-    left: 3%;
-    z-index:2;
+    margin: -60px 0 0 20px;
+    z-index: 1;
 }
 
 #map-marker {
@@ -84,12 +85,10 @@ img {
 }
 
 .main {
-    float: left;
     width: 60%;
 }
 
 .card {
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -130,7 +129,7 @@ img {
 }
 
 .information{
-    margin: 100px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 .education-information {
@@ -143,7 +142,6 @@ img {
 }
 
 .sidebar {
-    float: right;
     width: 40%;
 }
 
@@ -183,6 +181,7 @@ img {
 }
 
 .view-more {
+    display: block;
     border-top: 5px solid lightgray;
     padding: 20px;
 }
