@@ -14,43 +14,45 @@
 </head>
 
 <body>
-    <div id="nav" class="center">
-        <h1>Dojonary</h1>
-        <form>
-            <input id="search-bar" type="text" placeholder="Search">
-        </form>
-        <button onclick="login()">Login</button>
+    <div class="nav">
+        <h1 class="nav-title">Dojonary</h1>
+        <input id="search" type="text" placeholder="Search">
+        <button id="login" class="btn" onclick="login()">Login</button>
     </div>
-    <div id="main-content" class="center">
-        <div id="left-col">
-            <div class="definition">
-                <div class="summary">
-                    <h2>ninja</h2>
-                    <p class="italic">noun</p>
-                    <p>Plural: ninjas</p>
-                    <button class="like-btn" onclick="likeAlert()">13 Likes</button>
-                </div>
-                <p class="description">
+    <div id="main">
+        <div class="card">
+            <div class="left-col">
+                <h2>ninja</h2>
+                <h3>noun</h3>
+                <h4>Plural: ninjas</h4><br>
+                <button class="btn" onclick="likeAlert()">13 Likes</button>
+            </div>
+            <div class="right-col">
+                <h2>
                     A practitioner skilled in the
                     <a href="https://en.wikipedia.org/wiki/Japanese_Wikipedia" target="_blank">Japanese</a> art of
                     <a href="https://en.wikipedia.org/wiki/Ninjutsu" target="_blank">ninjutsu</a>
-                </p>
+                </h2>
             </div>
-            <div class="definition">
-                <div class="summary">
-                    <h2>ninja</h2>
-                    <p>noun</p>
-                    <p>Plural: ninjas</p>
-                    <button class="like-btn" onclick="likeAlert()">37 Likes</button>
-                </div>
-                <p class="description">
+        </div>
+        <div class="card">
+            <div class="left-col">
+                <h2>ninja</h2>
+                <h3>noun</h3>
+                <h4>Plural: ninjas</h4><br>
+                <button class="btn" onclick="likeAlert()">37 Likes</button>
+            </div>
+            <div class="right-col">
+                <h2>
                     A <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a> 
                     who breaks down problems with 
                     <a href="https://en.wikipedia.org/wiki/Zen" target="_blank">zen</a>-like focus
-                </p>
+                </h2>
             </div>
         </div>
-        <div id="right-col">
+    </div>
+    <div id="sidebar">
+        <div class="card">
             <p>Dojonary is defined by <span class="bold">YOU</span></p><br>
             <button id="addDef" class="btn" onclick="removeButton(this)">Add Definition</button>
         </div>
