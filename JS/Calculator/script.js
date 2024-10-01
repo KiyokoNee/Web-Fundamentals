@@ -1,44 +1,43 @@
-let operator = null;
-let firstNumber = null;
-let overwriteDisplay = true;
+let currentNumber = "";
+let savedNumber = "";
+let operator = "";
 
 function press(num) {
-    if(overwriteDisplay){
-        display.innerText = num;
-        overwriteDisplay = false;
-    } else {
-        display.innerText += num;
-    }
+    currentNumber += num;
+    display.innerText = currentNumber;
 }
 
 function clr() {
-    display.innerText = 0;
-    operator = null;
+    display.innerText = "0";
+    currentNumber = "";
+    savedNumber = "";
+    operator = "";
 }
 
 function setOP(op) {
-    console.log(op);
-    firstNumber = display.innerText;
     operator = op;
-    overwriteDisplay = true;
+    savedNumber = currentNumber;
+    currentNumber = "";
 }
 
 function calculate() {
+    let current = Number(currentNumber);
+    let saved = Number(savedNumber);
+
     switch (operator) {
         case '*':
-            display.innerText = Number(firstNumber) * Number(display.innerText);
+            currentNumber = saved * current;
             break;
         case '/':
-            display.innerText = Number(firstNumber) / Number(display.innerText);
-            break;
-        case '-':
-            display.innerText = Number(firstNumber) - Number(display.innerText);
+            currentNumber = saved / current;
             break;
         case '+':
-            display.innerText = Number(firstNumber) + Number(display.innerText);
+            currentNumber = saved + current;
             break;
-        default:
+        case '-':
+            currentNumber = saved - current;
             break;
     }
-    overwriteDisplay = true;
+    operator = "";
+    display.innerText = currentNumber;
 }
